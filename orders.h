@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 
 typedef struct Node{
 	struct Node* next;
@@ -16,4 +18,9 @@ typedef struct bookOrder{
 	char* title;
 }bOrder; //Book Order
 
-
+typedef struct customerData{
+	char* name, addressm state, zipcode;
+	int cID;
+	float balance;
+	char* sOrders[50], rOrders[50];
+}cData;
